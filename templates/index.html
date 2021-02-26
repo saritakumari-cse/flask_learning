@@ -1,0 +1,24 @@
+
+<body>
+    <h1>made by sarita</h1>
+    
+    <table>
+        <thead>
+            <th>Process</th>
+            <th>Status</th>
+            <th>Is running</th>
+            <th>User</th>
+        </thead>
+        
+        {% for process in processes %} 
+        <tr>
+            <td>{{ process[0] }}</td>
+            <td>{{ process[1] }}</td>
+            <td>{{ process[2] }}</td>
+            <td>{{ process[3] }}</td>
+        </tr>
+        {% endfor %}
+    
+    </table>
+
+</body>
